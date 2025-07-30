@@ -41,7 +41,7 @@ A complete full-stack application to streamline appointment booking, queue track
 
 ## 📁 Project Structure
 
-```
+```'
 
 📦 project-root
 ├── backend/              # NestJS app
@@ -153,13 +153,6 @@ After registration (`/register`), log in at `/login`.
 
 Backend stores users in MySQL. Passwords are hashed using `bcrypt`.
 
----
-
-## 📷 Screenshots
-
-> ✅ Include if submitting: dashboard, login, doctor list, patient queue, etc.
-
----
 
 ## 🧠 Developer Notes
 
@@ -185,8 +178,8 @@ To deploy:
 ## 🙋‍♀️ Author
 
 **Your Name**
-GitHub: [@yourhandle](https://github.com/Arbaaz-Khan-Tech)
-Email: [youremail@example.com](mailto:arbukhan1971@gmail.com)
+GitHub: [@Arbaaz Khan](https://github.com/Arbaaz-Khan-Tech)
+Email: [Mail Me](mailto:arbukhan1971@gmail.com)
 
 ---
 
