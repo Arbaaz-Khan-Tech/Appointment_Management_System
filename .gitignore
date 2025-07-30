@@ -1,0 +1,31 @@
+# === Global ===
+node_modules/
+.env
+.env.local
+.env.*.local
+.DS_Store
+dist/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.cache/
+*.tsbuildinfo
+
+# === NestJS (backend/) specific ===
+front-desk-clinic/node_modules/
+front-desk-clinic/dist/
+front-desk-clinic/.env
+front-desk-clinic/.env.*
+front-desk-clinic/*.log
+front-desk-clinic/coverage/
+
+# === Next.js (frontend/) specific ===
+frontend-clinic/node_modules/
+frontend-clinic/.next/
+frontend-clinic/out/
+frontend-clinic/.env
+frontend-clinic/.env.*
+frontend-clinic/public/static/.cache
+frontend-clinic/coverage/
