@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label'
 import { Card, CardContent } from '@/components/ui/card'
 import api from '@/lib/api'
 import { useRouter } from 'next/navigation'
+import { Mail, Lock, UserPlus } from 'lucide-react'
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')
@@ -36,44 +37,61 @@ const handleLogin = async () => {
 }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#0f0f0f] text-white px-4">
-      <Card className="w-full max-w-md p-6 rounded-2xl shadow-[10px_10px_30px_#0a0a0a,_-10px_-10px_30px_#1a1a1a] bg-[#1c1c1c] border border-[#2c2c2c]">
+    <div className="min-h-screen flex items-center justify-center bg-green-50 px-4">
+      <Card className="w-full max-w-md p-6 rounded-xl shadow-md bg-white border border-green-100">
         <CardContent className="space-y-6">
-          <h2 className="text-2xl font-semibold text-center">Login</h2>
+          <h2 className="text-2xl font-semibold text-center text-green-700">Login</h2>
 
           {error && (
-            <div className="bg-red-500/20 text-red-400 text-sm rounded-md px-4 py-2">
+            <div className="bg-red-50 text-red-500 text-sm rounded-lg px-4 py-2 border border-red-100">
               {error}
             </div>
           )}
 
           <div className="space-y-2">
-            <Label htmlFor="email">Email</Label>
-            <Input
-              id="email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@example.com"
-              className="bg-[#1c1c1c] border border-[#333] text-white placeholder:text-gray-400 shadow-inner"
-            />
+            <Label htmlFor="email" className="text-green-700">Email</Label>
+            <div className="relative">
+              <Mail className="absolute left-3 top-2.5 h-5 w-5 text-green-500" />
+              <Input
+                id="email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="you@example.com"
+                className="pl-10 bg-white border border-green-200 text-green-900 placeholder:text-green-300 rounded-lg focus:border-green-500 focus:ring-1 focus:ring-green-500"
+              />
+            </div>
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="password">Password</Label>
-            <Input
-              id="password"
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="••••••••"
-              className="bg-[#1c1c1c] border border-[#333] text-white placeholder:text-gray-400 shadow-inner"
-            />
+            <Label htmlFor="password" className="text-green-700">Password</Label>
+            <div className="relative">
+              <Lock className="absolute left-3 top-2.5 h-5 w-5 text-green-500" />
+              <Input
+                id="password"
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="••••••••"
+                className="pl-10 bg-white border border-green-200 text-green-900 placeholder:text-green-300 rounded-lg focus:border-green-500 focus:ring-1 focus:ring-green-500"
+              />
+            </div>
           </div>
 
-          <Button onClick={handleLogin} className="w-full mt-4 bg-white text-black hover:bg-gray-100">
+          <Button onClick={handleLogin} className="w-full mt-4 bg-green-600 text-white hover:bg-green-700 rounded-lg">
             Login
           </Button>
+          
+          <div className="text-center pt-2">
+            <Button 
+              variant="ghost" 
+              className="text-green-600 hover:text-green-700 hover:bg-green-50 rounded-lg"
+              onClick={() => router.push('/register')}
+            >
+              <UserPlus className="mr-2 h-4 w-4" />
+              Don't have an account?
+            </Button>
+          </div>
         </CardContent>
       </Card>
     </div>
