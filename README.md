@@ -162,17 +162,6 @@ Backend stores users in MySQL. Passwords are hashed using `bcrypt`.
 
 ---
 
-## 📦 Deployment
-
-This project is production-ready.
-
-To deploy:
-
-* Use PlanetScale or MySQL on RDS for DB
-* Backend on Render/Vercel/DigitalOcean
-* Frontend on Vercel (Next.js native)
-
----
 
 ## 🙋‍♀️ Author
 
