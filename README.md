@@ -9,6 +9,8 @@ A complete full-stack application to streamline appointment booking, queue track
 
 ---
 
+Demo Video
+
 ## 🔧 Tech Stack
 
 | Layer       | Technology                            |
@@ -68,7 +70,7 @@ A complete full-stack application to streamline appointment booking, queue track
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/yourname/clinic-system.git
+git clone https://github.com/Arbaaz-Khan-Tech/Appointment_Management_System.git
 cd clinic-system/backend
 npm install
 ````
