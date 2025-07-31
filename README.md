@@ -1,6 +1,6 @@
 
 
-## 📄 `README.md`
+
 
 ```md
 # 🏥 Clinic Front Desk Management System
